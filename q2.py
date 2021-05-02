@@ -195,7 +195,7 @@ The explanation is presented below as a list of weighted features.
 
 exp1.as_list()
 
-"""These weighted features are a linear model, which approximates the behaviour of the random forest classifier in the vicinity of the test example. Roughly, if we remove 'author' and 'poor' from the document , the prediction should move towards the opposite class (negative) by about the sum of the weights for both features. Let's see if this is the case."""
+"""These weighted features are a linear model, which approximates the behaviour of the random forest classifier in the vicinity of the test example. Roughly, if we remove 'author' and 'poor' from the document , the prediction should move towards the opposite class by about the sum of the weights for both features. Let's see if this is the case."""
 
 print('Original prediction:', rf.predict_proba(test_vector[idx])[0, 1])
 tmp = test_vector[idx].copy()
